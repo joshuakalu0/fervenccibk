@@ -9,17 +9,17 @@ import {
   login_validationSchema,
 } from "../lib/form_data/login_data";
 import FormButton from "../components/form/FormButton";
-import useLoggedin from "../components/hooks/useLoggedin";
+// import useLoggedin from "../components/hooks/useLoggedin";
 import Loading from "../components/utiles/Loading";
 import { useRouter } from "next/router";
 import Loaderror from "../components/utiles/Loaderror";
 import ErrorPage from "next/error";
 
 export default function Login({ csrfToken }) {
-  const [isloading, isloggedin, data] = useLoggedin();
+  // const [isloading, isloggedin, data] = useLoggedin();
   const [errors, seterrors] = useState([]);
   const ro = useRouter();
-  if (isloading == true) return <Loading />;
+  // if (isloading == true) return <Loading />;
   return (
     <div className='flex items-center justify-center w-[100vw] h-[100vh] fixed top-0'>
       <div className=' rounded-md p-3 border-2 w-1/2'>
